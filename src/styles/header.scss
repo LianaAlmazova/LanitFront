@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 14px;
+
+    position: static;
+    width: 314px;
+    height: 36px;
+    left: calc(50% - 314px/2);
+    top: calc(50% - 36px/2 - 138px);
+
+    .header__title {
+        width: 265px;
+        height: 36px;
+
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+
+        color: #424242;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .header__logo {
+        width: 34px;
+        height: 34px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+}

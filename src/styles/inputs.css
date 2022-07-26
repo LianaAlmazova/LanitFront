@@ -1,3 +1,11 @@
+.button .button__resetPassword, .button .button__log {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 145%;
+}
+
 .button {
   box-sizing: border-box;
   display: flex;
@@ -17,17 +25,33 @@
   width: 44px;
   height: 22px;
   padding: 0;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 145%;
   color: #D6D6D6;
   border: 0px solid;
   background-color: #F5F5F5;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+.button .button__log .formValid {
+  background-color: #FF8A65;
+}
+.button .button__resetPassword {
+  width: 200px;
+  height: 36px;
+  border: 0px solid;
+  color: #D6D6D6;
+  background: #F5F5F5;
+}
+
+.forgotPassword {
+  margin-top: 350px;
+  padding: 0;
+}
+
+.back_toSecondLog {
+  position: absolute;
+  top: 4.5%;
+  left: 5.8%;
 }
 
 .inputs {
@@ -65,7 +89,7 @@
 }
 .inputs .title_login {
   height: 22px;
-  width: 117px;
+  width: 275px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -75,7 +99,7 @@
 }
 .inputs .title_password {
   height: 22px;
-  width: 169px;
+  width: 275px;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;

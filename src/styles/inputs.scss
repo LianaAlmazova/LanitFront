@@ -1,4 +1,5 @@
 @import './button.scss';
+@import './links.scss';
 
 @mixin parts_of_inputs ($n) {
     display: flex;
@@ -46,11 +47,11 @@
     }
 
     .title_login {
-        @include inputs_title(117px);
+        @include inputs_title(275px);
     }
 
     .title_password {
-        @include inputs_title(169px);
+        @include inputs_title(275px);
     }
     
     .inputs__box {

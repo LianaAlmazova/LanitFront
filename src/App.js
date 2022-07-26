@@ -1,15 +1,24 @@
-import { Header } from './components/header'
-import { Inputs } from './components/inputs'
-import { Button } from './components/button'
+import { Routes, Route, Link } from "react-router-dom"
+
+import { FirstLog } from './components/pages/fisrtLog'
+import { ResetPassword } from "./components/pages/resetPassword";
+import { SecondLog } from './components/pages/secondLog'
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        < Header />
-        < Inputs /> 
-      </div>    
-    </div>
+    <>
+      <div>
+        <a href="/">Home</a>
+        <a href="/fisrtLog">FirstLog</a>
+        <a href="/secondLog">SecondLog</a>
+      </div>
+      <Routes>
+        <Route path="/fisrtLog" element={<FirstLog />}/>
+        <Route path="/secondLog" element={<SecondLog />}/>
+        <Route path="/resetPassword" element={<ResetPassword />}/>
+      </Routes>
+    </>
+
   );
 }
 

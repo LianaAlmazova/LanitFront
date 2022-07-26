@@ -1,3 +1,11 @@
+%button_font {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 145%;
+}
+
 .button {
     box-sizing: border-box;
     display: flex;
@@ -11,7 +19,7 @@
     width: 132px;
     height: 36px;
     margin-top: 7%;
-
+    
     background: #F5F5F5;
     border-radius: 5px;
 
@@ -20,11 +28,7 @@
         height: 22px;
         padding: 0;
 
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 145%;
+        @extend %button_font;
 
         color: #D6D6D6;
         border: 0px solid;
@@ -33,5 +37,18 @@
         flex: none;
         order: 0;
         flex-grow: 0;
+        
+        .formValid{
+            background-color: #FF8A65;
+        }
+    }
+
+    .button__resetPassword{
+        width: 200px;
+        height: 36px;
+        @extend %button_font;
+        border: 0px solid;
+        color: #D6D6D6;
+        background: #F5F5F5;
     }
 }

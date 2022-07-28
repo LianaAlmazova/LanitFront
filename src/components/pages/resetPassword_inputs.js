@@ -1,15 +1,15 @@
 import { Header } from "../header/header.js"
-import { Inputs } from '../inputs/inputs.js'
+import { ResetPasswordInputs } from "../resetPasswordInputs"
 
-const FirstLog = () => {
+const ResetPassword_inputs = () => {
     return (
         <div className="App">
             <div className="container">
                 < Header />
-                < Inputs />
+                < ResetPasswordInputs />
             </div>
         </div>
     )
 }
 
-export { FirstLog };
+export { ResetPassword_inputs };

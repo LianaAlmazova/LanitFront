@@ -1,6 +1,9 @@
 .forgotPassword {
-  margin-top: 350px;
   padding: 0;
+  position: absolute;
+  width: 162px;
+  bottom: -22px;
+  left: 40px;
 }
 
 .back_toSecondLog {

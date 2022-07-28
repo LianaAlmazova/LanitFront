@@ -1,13 +1,9 @@
-const validation = (values) => {
+const validationResetPassword = (values) => {
     let errors = {};
 
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!re.test(String(values.login).toLowerCase())) {
         errors.login = "Неверный логин или пароль :("
-        
-        if (!values.login) { //пока сделала появление ошибки при отсутствии введенных данных
-            errors.login = "Такой логин уже существует"
-        }
     } else {
         errors.login = ""
     }
@@ -18,7 +14,13 @@ const validation = (values) => {
         errors.password = ""
     }
 
+    if (values.comfirmPassword !== values.password) {
+        errors.comfirmPassword = "Пароли не совпадают :("
+    } else {
+        errors.comfirmPassword = ""
+    }
+
 return errors;
 }
 
-export default validation;
+export default validationResetPassword;

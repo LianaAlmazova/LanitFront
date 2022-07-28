@@ -1,5 +1,5 @@
-import { Header } from '../header'
-import { InputResetPassword } from '../InputResetPassword'
+import { Header } from "../header/header.js"
+import { InputResetPassword } from "../InputResetPassword"
 
 const ResetPassword = () => {
     return (
@@ -10,11 +10,6 @@ const ResetPassword = () => {
             <div className="container">
                 < Header />
                 <InputResetPassword />
-                <div className="button">
-                    <form>
-                        <button className="button__resetPassword">Сменить пароль</button>
-                    </form>
-                </div>
             </div>
         </div>
     )

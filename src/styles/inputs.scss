@@ -7,10 +7,10 @@
     align-items: flex-start;
     padding: 0px;
     gap: 4px;
-        
+
     width: 324px;
     height: 66px;
-    
+
     flex: none;
     flex-grow: 0;
     order: $n;
@@ -53,7 +53,7 @@
     .title_password {
         @include inputs_title(275px);
     }
-    
+
     .inputs__box {
         box-sizing: border-box;
 
@@ -83,11 +83,15 @@
         color: #EF5350;
     }
 
-    .invalid {
-        border: 1px solid #EF5350;
+    .error_secondLog {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 52px;
+        left: 56px;
     }
 
-    .error>.inputs__box {
+    .invalid {
         border: 1px solid #EF5350;
     }
 
@@ -98,15 +102,17 @@
         padding: 1px 10px 1px 0px;
         gap: 10px;
         border: 0px solid #9D9D9D;
-        
+
         width: 294px;
         height: 26px;
-        
+
         flex: none;
         align-self: stretch;
         flex-grow: 0;
 
-        &:active, &:hover, &:focus {
+        &:active,
+        &:hover,
+        &:focus {
             outline: 0;
             outline-offset: 0;
         }
@@ -117,3 +123,10 @@
     }
 }
 
+.invalid_a {
+    color: #EF5350;
+}
+
+.valid_submit {
+    background-color: #FF8A65;
+}

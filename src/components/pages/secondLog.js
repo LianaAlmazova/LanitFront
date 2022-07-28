@@ -1,5 +1,5 @@
-import { Header } from '../header'
-import { InputsSecondLog } from '../inputsSecondLog'
+import { Header } from "../header/header.js"
+import { InputsSecondLog } from "../inputsSecondLog.js"
 
 const SecondLog = () => {
     return (
@@ -8,11 +8,9 @@ const SecondLog = () => {
                 < Header />
                 < InputsSecondLog />
             </div>
-            <div className="forgotPassword">
-                <a href='./resetPassword' className="forgotPassword">О нет! Я забыл пароль!</a>
-            </div>
         </div>
     )
 }
+
 
 export { SecondLog };

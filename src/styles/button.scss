@@ -6,22 +6,24 @@
     line-height: 145%;
 }
 
-.button {
+button {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 6px 44px;
+    padding: 7px 44px;
     gap: 12px;
     margin: 0 auto;
 
-    width: 132px;
-    height: 36px;
+    // width: 132px;
+    // height: 36px;
     margin-top: 7%;
-    
+
     background: #F5F5F5;
+    color: #D6D6D6;
     border-radius: 5px;
+    border: 0px solid;
 
     .button__log {
         width: 44px;
@@ -30,25 +32,22 @@
 
         @extend %button_font;
 
-        color: #D6D6D6;
         border: 0px solid;
-        background-color: #F5F5F5;
 
         flex: none;
         order: 0;
         flex-grow: 0;
-        
-        .formValid{
-            background-color: #FF8A65;
-        }
     }
 
-    .button__resetPassword{
+    .button__resetPassword {
         width: 200px;
         height: 36px;
         @extend %button_font;
         border: 0px solid;
-        color: #D6D6D6;
-        background: #F5F5F5;
     }
+}
+
+.button_valid {
+    color: #FAFAFA;
+    background-color: #FF8A65;
 }

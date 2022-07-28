@@ -60,4 +60,13 @@ a {
 }
 
 
+.inputs__number {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+      display: none;
+  }
+}
+
+
 

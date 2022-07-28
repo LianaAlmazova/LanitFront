@@ -1,4 +1,4 @@
-.button .button__resetPassword, .button .button__log {
+button .button__resetPassword, button .button__log {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
@@ -6,46 +6,47 @@
   line-height: 145%;
 }
 
-.button {
+button {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6px 44px;
+  padding: 7px 44px;
   gap: 12px;
   margin: 0 auto;
-  width: 132px;
-  height: 36px;
   margin-top: 7%;
   background: #F5F5F5;
+  color: #D6D6D6;
   border-radius: 5px;
+  border: 0px solid;
 }
-.button .button__log {
+button .button__log {
   width: 44px;
   height: 22px;
   padding: 0;
-  color: #D6D6D6;
   border: 0px solid;
-  background-color: #F5F5F5;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
-.button .button__log .formValid {
-  background-color: #FF8A65;
-}
-.button .button__resetPassword {
+button .button__resetPassword {
   width: 200px;
   height: 36px;
   border: 0px solid;
-  color: #D6D6D6;
-  background: #F5F5F5;
+}
+
+.button_valid {
+  color: #FAFAFA;
+  background-color: #FF8A65;
 }
 
 .forgotPassword {
-  margin-top: 350px;
   padding: 0;
+  position: absolute;
+  width: 162px;
+  bottom: -22px;
+  left: 40px;
 }
 
 .back_toSecondLog {
@@ -129,10 +130,14 @@
   font-size: 13px;
   color: #EF5350;
 }
-.inputs .invalid {
-  border: 1px solid #EF5350;
+.inputs .error_secondLog {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 52px;
+  left: 56px;
 }
-.inputs .error > .inputs__box {
+.inputs .invalid {
   border: 1px solid #EF5350;
 }
 .inputs .inputs__cell {
@@ -154,4 +159,12 @@
 }
 .inputs .inputs__cell.password {
   color: #424242;
+}
+
+.invalid_a {
+  color: #EF5350;
+}
+
+.valid_submit {
+  background-color: #FF8A65;
 }/*# sourceMappingURL=inputs.css.map */

@@ -1,5 +1,5 @@
 import { Header } from "../header/header.js"
-import { Inputs } from '../inputs/inputs.js'
+import { Inputs } from "../inputs/inputs.js"
 
 const FirstLog = () => {
     return (
@@ -9,7 +9,7 @@ const FirstLog = () => {
                 < Inputs />
             </div>
         </div>
-    )
+    ) 
 }
 
 export { FirstLog };

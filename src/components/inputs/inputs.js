@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setUser } from "../../store/userSlice"
 import "../../styles/inputs.css";
 import validation from "../validation.js";
 
@@ -9,7 +11,7 @@ export const Inputs = () => {
     });
 
     const [errors, setErrors] = useState({});
-    const [buttonValid, setButtonValid] = useState(false); 
+    const [buttonValid, setButtonValid] = useState(false);
 
     const handleChange = (event) => {
         setValues({
@@ -26,9 +28,21 @@ export const Inputs = () => {
         }
     };
 
+    const dispatch = useDispatch();
+
     const formSubmit = (event) => {
         event.preventDefault();
         setErrors(validation(values));
+        
+        localStorage.setItem('user', JSON.stringify(
+            dispatch(
+                setUser({
+                    login: values.login,
+                    password: values.password,
+                    loggedin: true,
+                })
+            )
+        ));
     };
 
     return (
@@ -67,9 +81,7 @@ export const Inputs = () => {
                 </div>
             </div>
             <div className="button">
-                <form>
-                    <button className={`button__log form-control ${(buttonValid && !errors.login) && "button_valid"}`} onClick={formSubmit}>Войти</button>
-                </form>
+                <button type="submit" className={`button__log form-control ${(buttonValid && !errors.login) && "button_valid"}`} onClick={formSubmit}>Войти</button>
             </div>
         </div>
     );

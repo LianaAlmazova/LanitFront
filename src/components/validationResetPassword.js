@@ -20,7 +20,7 @@ const validationResetPassword = (values) => {
         errors.comfirmPassword = ""
     }
 
-return errors;
+    return errors;
 }
 
 export default validationResetPassword;

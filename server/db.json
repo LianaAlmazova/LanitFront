@@ -1,0 +1,9 @@
+{
+    "users": [
+        {
+            "login": "g@gmail.com",
+            "password": "as",
+            "loggedin": true
+        }
+    ]
+}

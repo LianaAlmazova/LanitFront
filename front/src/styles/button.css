@@ -1,0 +1,110 @@
+button .button__resetPassword, button .button__log {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 145%;
+}
+
+.button__container {
+  position: relative;
+}
+
+button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 44px;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 7%;
+  background: #F5F5F5;
+  color: #D6D6D6;
+  border-radius: 5px;
+  border: 0px solid;
+}
+button .button__log {
+  width: 44px;
+  height: 22px;
+  padding: 0;
+  border: 0px solid;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+button .button__resetPassword {
+  width: 200px;
+  height: 36px;
+  border: 0px solid;
+}
+button .button__text {
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.button_valid {
+  color: #FAFAFA;
+  background-color: #FF8A65;
+}
+
+.spinner {
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 90%;
+  left: 54%;
+  margin: -25px 0 0 -25px;
+  width: 24px;
+  height: 24px;
+  visibility: hidden;
+}
+.spinner .path {
+  stroke: #FAFAFA;
+  stroke-linecap: round;
+  -webkit-animation: dash 1.5s ease-in-out infinite;
+          animation: dash 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}/*# sourceMappingURL=button.css.map */

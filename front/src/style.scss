@@ -1,0 +1,73 @@
+@import "./styles/button.scss";
+@import "./styles/header.scss";
+@import "./styles/inputs.scss";
+@import "./styles/links.scss";
+@import "./styles/tooltips.scss";
+
+%textFormat {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 145%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+  background-color: #FFFFFF;
+
+  .App {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    background: url(components/images/pattern.png) center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  
+  .container {
+    position: absolute;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .paragraph {
+      @extend %textFormat;
+      color: #9E9E9E;
+      width: 324px;
+    }
+  }
+}
+
+a {
+  @extend %textFormat;
+
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  color: #CECECE;
+
+  text-decoration: none;
+}
+
+
+.inputs__number {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button {
+      display: none;
+  }
+}
+
+
+
